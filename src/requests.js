@@ -9,7 +9,6 @@ const getPuzzle = async (wordCount) => {
   }
 }
 
-// adding async/await
 const getCountry = async (countryCode) => {
   const response = await fetch(`//restcountries.eu/rest/v2/all`)
       if (response.status === 200) {      
@@ -20,7 +19,6 @@ const getCountry = async (countryCode) => {
       }
 }
 
-// adding async/await
 const getLocation = async () => {
   const response = await fetch(`//ipinfo.io/json?token=456f3ad10cca05`)
     if (response.status === 200) {            
