@@ -52,7 +52,9 @@ class Hangman {
         }
 
         if (guess.length === 1 && isUnique) {
-            this.guessedLetters.push(guess)
+            this.guessedLetters = [...this.guessedLetters, guess]
+            // ALTERNATIVE METHOD WITHOUT SPREAD OPERATOR            
+            // this.guessedLetters.push(guess)
         }
         if (isUnique && isBadGuess) {
             this.remainingGuesses--
